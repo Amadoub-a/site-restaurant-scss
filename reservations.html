@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Kreyol & Attiéké est un restaurant ivoiro-haïtien fusionnant les saveurs authentiques de la Côte d'Ivoire et d'Haïti. Découvrez des plats traditionnels, épicés et savoureux, où attiéké, grillades et mets créoles se rencontrent dans une ambiance chaleureuse et conviviale.">
+    <!-- Pour s'assurer d'un affichage correct sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
+    qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kreyol & Attiéké | Réservation</title>
+</head>
+
+<body id="top">
+    <header>
+        <a class="visually-hidden" href="#content">Aller au contenu principal</a>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top" aria-labelledby="description-menu">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Logo du site"> 
+					<h1 class="visually-hidden">
+                        Kreyol & Attiéké
+                    </h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <!-- description du menu de navigation -->
+                    <span id="description-menu" class="visually-hidden">
+                        Voici le menu de navigation.<br>
+                        Accueil, Menus, Catalogue, Réservations, À propos.<br>
+                        Vous etes au menu reservation.
+                    </span>
+
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link p-2">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link p-2">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-2">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="reservations.html" class="nav-link active p-2">Réservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-2">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>   
+    <main id="content">
+        <div class="container">
+            <div aria-label="breadcrumb container">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Accueil</a> </li>
+                <li class="breadcrumb-item active" aria-current="page">Réservation</li>
+              </ol>
+            </div>
+          </div>
+        <div class="container">
+            <h2 class="text-center mb-5 mt-5">Réservation</h2>
+            <div class="card p-4">
+                <form action="mailto:casseus770@gmail.com" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <legend>Informations du client</legend>
+                                <div class="mb-3 form-group">
+                                    <label for="nom" class="form-label">Nom <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control border-dark" id="nom" name="nom" placeholder="Votre nom" required>
+                                </div>
+                                
+                                <div class="mb-3 form-group">
+                                    <label for="prenom" class="form-label">Prénom <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control border-dark" id="prenom" name="prenom" placeholder="votre prénom" required>
+                                </div>
+                              
+                                <div class="mb-3 form-group">
+                                    <label for="email" class="form-label">E-mail </label>
+                                    <input type="email" class="form-control border-dark" id="email" name="email" placeholder="xy@gmail.com">
+                                </div>
+                               
+                                <div class="mb-3 form-group">
+                                    <label for="contact" class="form-label">Téléphone <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control border-dark" id="contact" name="contact" placeholder="455-522-5222" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                </div>
+                                
+                            </fieldset>  
+                        </div>
+                        <div class="col-md-6">   
+                            <fieldset>
+                                <legend>Informations sur la réservation</legend>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mb-3 form-group">
+                                                <label for="dateReservation" class="form-label">Date de la réservation <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control border-dark" name="dateReservation" id="dateReservation" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="mb-3 form-group">
+                                                <label for="heureReservation" class="form-label">Heure de la réservation <span class="text-danger">*</span></label>
+                                                <input type="time" class="form-control border-dark" name="heureReservation" id="heureReservation" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="mb-3 form-group">
+                                                <label for="nbPersonnes" class="form-label">Nombre de personnes <span class="text-danger">*</span></label>
+                                                <input type="number" class="form-control border-dark" min="1" name="nbPersonnes" id="nbPersonnes" placeholder="1" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="emplacement" class="form-label">Emplacement </label>
+                                            <select id="emplacement" name="emplacement" class="form-control border-dark">
+                                                <option value="" disabled selected>Veuillez choisir</option>
+                                                <option value="Salle principale">Salle principale</option>
+                                                <option value="Terasse">Terasse</option>
+                                                <option value="Près de la fenêtre">Près de la fenêtre</option>
+                                                <option value="Coin tranquille">Coin tranquille</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <span class="form-label mb-2">Occasion <span class="text-danger">*</span></span>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input border-dark" name="occasion" id="Anniversaire" value="Anniversaire" required> 
+                                                <label for="Anniversaire" class="form-label">Anniversaire</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input border-dark" id="diner-romantique" name="occasion" value="Dîner romantique" required>
+                                                <label for="diner-romantique" class="form-label">Dîner romantique</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input border-dark" id="reunion-affaire" name="occasion" value="Réunion d'affaire" required>
+                                                <label for="reunion-affaire" class="form-label">Réunion d'affaire</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input border-dark" id="autre" name="occasion" value="Autre" required>
+                                                <label for="autre" class="form-label">Autre</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="mb-3 form-group">
+                                                <label for="commentaire" class="form-label">Autres précisions</label>
+                                                <textarea class="form-control border-dark" id="commentaire" name="commentaire" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </fieldset>
+                        </div> 
+                        <div class="d-md-flex justify-content-md-end">
+                            <button class="btn btn-primary" type="submit">Valider</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5 pt-5 bg-primary">
+        <div class="container">
+            <nav>
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Accueil</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Caractéristiques</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Tarifs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">À propos</a></li>
+                    </ul>
+                    </div>
+            
+                    <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Accueil</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Caractéristiques</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Tarifs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">À propos</a></li>
+                    </ul>
+                    </div>
+            
+                    <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Accueil</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Caractéristiques</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Tarifs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">À propos</a></li>
+                    </ul>
+                    </div>
+            
+                    <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Abonnez-vous à notre newsletter</h5>
+                        <p>Résumé mensuel de nos nouveautés et passionnantes.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter" class="visually-hidden">Adresse mail</label>
+                        <input type="email" id="newsletter" class="form-control border-dark" placeholder="Adresse mail" required>
+                        <button class="btn btn-secondary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </nav>
+          <div class="d-flex flex-column footer-infos-text-style">
+            <p>© 2024 - 05B Travail 2 Boostrap Animation CSS - Amadou KOUYAT&Eacute; & Marie Wideline Pierre (groupe 1-A)</p>
+          </div>
+        </div>
+  
+        <a class="back-to-top" href="#top" title="Aller en haut de la page">
+          <i class="bi bi-arrow-up"></i>
+          <p class="visually-hidden">Aller en haut de la page</p>
+        </a>
+      </footer>
+
+    <!------------------------------------------------------------------------------------
+        Si on a besoin des éléments interactifs de Bootstrap, on doit utiliser au minimum
+        le 2e script suivant (bootstrap.min.js) et parfois le 1er en plus (Popper)
+        intégrés dans cet ordre.
+    ------------------------------------------------------------------------------------>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

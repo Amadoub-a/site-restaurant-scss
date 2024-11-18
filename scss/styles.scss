@@ -1,0 +1,173 @@
+/* Installation des polices*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&family=Source+Sans+3:ital,wght@1,300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/**Variables SASS**/
+$primary:#DCAD7F;
+$secondary:#EC594A;
+$tertiary:#988F91;
+$principal:#EFF0EF;
+$dark:#50473f;
+$font-color:#333333;
+
+$police-texte-courant : "Roboto Condensed", sans-serif;
+$police-titres : "Source Sans 3";
+
+/*** Importation de Boostrap **/
+@import "partials/bootstrap";
+
+/*** Début des styles personnalisés ***/
+body{
+    font-family: $police-texte-courant;
+	background-color: $principal;
+    font-weight: 300;
+	color: $font-color;
+	padding: 0 1rem;
+	margin-bottom: 1.5rem;
+}
+
+main {
+    margin-top:230px;
+}
+
+.navbar-nav {
+    background-color: $secondary;
+    width: 45%;
+    a{
+        color:#000000;
+    }
+}
+
+%style-all-h {
+	font-family:$police-titres;
+	font-weight: bold;
+	font-style: italic;
+	color:$police-texte-courant;
+	text-transform: uppercase;
+}
+
+h1{
+	@extend %style-all-h;
+}
+
+h2{
+	@extend %style-all-h;
+}
+
+h3{
+	@extend %style-all-h;
+}
+
+h4{
+	@extend %style-all-h;
+}
+
+h5{
+	@extend %style-all-h;
+}
+
+h6{
+	@extend %style-all-h;
+}
+
+.carousel {
+    ul {
+        padding: 0;
+    }
+}
+
+.navbar-nav {
+    .nav-item {
+        &:hover {
+            background-color:$primary;
+            border-radius: 10%;
+        }
+
+        margin: .5rem;
+    }
+}
+
+.plat-semaine {
+
+    .card-recette {
+        @extend .h-100;
+        @extend .overflow-hidden;
+        @extend .text-bg-dark;
+        @extend .rounded-4; 
+        @extend .shadow-lg;
+        @extend .card;
+
+        .style-text-plat {
+            @extend .d-flex;
+            @extend .flex-column;
+            @extend .h-100;
+            @extend .p-5;
+            @extend .pb-3;
+            @extend .text-white;
+
+            .style-titre-plat {
+                @extend .pt-5;
+                @extend .mt-5;
+                @extend .mb-4;
+                @extend .display-6; 
+                @extend .lh-1;
+                @extend .fw-bold;
+            }
+        }
+    }
+
+    .plat-1 {
+        background-image: url('../img/recettes/recette-1.jpg');
+    }
+    .plat-2{
+        background-image: url('../img/recettes/recette-2.jpg');
+    }
+    .plat-3{
+        background-image: url('../img/recettes/recette-3.jpg');
+    }
+}
+
+.text-carousel {
+    @extend .text-start;
+    @extend .bg-dark;
+    @extend .p-2;
+    @extend .bg-opacity-50;
+    color: $principal;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.back-to-top {
+	position: sticky;
+    bottom: 70px;
+    right: 20px;
+    z-index: 99;
+    background-color: $dark;
+    color: $principal;
+    border: none;
+    margin-left:1rem ;
+    padding: 15px;
+    border-radius:70%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(50, 51, 52, 0.7);
+}
+
+footer{
+    .footer-infos-text-style {
+        @extend .flex-sm-row;
+        @extend .justify-content-center;
+        @extend .py-4;
+        @extend .border-top;
+    }
+}
+
+
+   
+
+
+
+

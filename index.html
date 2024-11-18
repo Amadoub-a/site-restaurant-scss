@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Kreyol & Attiéké est un restaurant ivoiro-haïtien fusionnant les saveurs authentiques de la Côte d'Ivoire et d'Haïti. Découvrez des plats traditionnels, épicés et savoureux, où attiéké, grillades et mets créoles se rencontrent dans une ambiance chaleureuse et conviviale.">
+    <!-- Pour s'assurer d'un affichage correct sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles de Boostrap + Styles personnalisés provenant de styles.scss -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Nous n'aurons pas besoin de normalize.css, car il existe des styles
+    qui font la même chose dans Bootstrap (voir fichier _reboot.scss) -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kreyol & Attiéké | Accueil</title>
+</head>
+<body id="top">
+    <header>
+        <a class="visually-hidden">Contenu de la page d'accueil</a>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top" aria-labelledby="description-menu">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Logo du site"> 
+					          <h1 class="visually-hidden">
+                        Kreyol & Attiéké
+                    </h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <!-- description du menu de navigation -->
+                    <span id="description-menu" class="visually-hidden">
+                        Voici le menu de navigation.<br>
+                        Accueil, Menus, Catalogue, Réservations, À propos.<br>
+                        Vous etes au menu Accueil.
+                    </span>
+
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active p-2">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link p-2">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-2">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="reservations.html" class="nav-link p-2">Réservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link p-2">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>    
+    <main>
+        <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3" class=""></button>
+          </div>
+          <ul class="carousel-inner">
+              <li class="carousel-item active">
+                <img src="img/sliders/slider-1.jpg" class="d-block w-100" alt="image du slider 1">
+                  <div class="carousel-caption text-carousel">
+                    <h2>Pizza Créole</h2>
+                    <p>
+                      Découvrez notre Pizza Créole, une fusion unique de saveurs des Caraïbes. Garnie de viande épicée, de légumes frais et d'une touche de piment, chaque bouchée offre une explosion de goûts exotiques et authentiques. Une pizza qui fait voyager !
+                    </p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Détails</a></p>
+                  </div>
+              </li>
+              <li class="carousel-item">
+                <img src="img/sliders/slider-2.jpg" class="d-block w-100" alt="image du slider 2">
+                <div class="container">
+                  <div class="carousel-caption text-carousel">
+                    <h2>Tarte au Citron Tropicale</h2>
+                    <p>
+                      Succombez à notre Tarte au Citron, un dessert frais et acidulé. Sa croûte croustillante et sa crème citronnée onctueuse, rehaussée d'une touche de zestes tropicaux, offrent un équilibre parfait entre douceur et vivacité. Un plaisir léger à savourer à tout moment ! </p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Détails</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <img src="img/sliders/slider-3.jpg" class="d-block w-100" alt="image du slider 3">
+                <div class="container">
+                  <div class="carousel-caption text-carousel">
+                    <h2>Omelette Gourmet</h2>
+                    <p>Savourez notre Omelette Gourmet, un mélange d'œufs moelleux et d'ingrédients frais. Garnie de légumes croquants, de fromages fondants et d'herbes aromatiques, elle est parfaite pour un petit-déjeuner ou un brunch plein de saveurs et de simplicité.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Détails</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <img src="img/sliders/slider-4.jpg" class="d-block w-100" alt="image du slider 4">
+                <div class="container">
+                  <div class="carousel-caption text-carousel">
+                    <h2>Café & Croissant Afro-Créole</h2>
+                    <p>Savourez l'alliance parfaite du croissant doré et d’un café aux arômes riches, issus des terres d'Afrique et des Caraïbes. Un petit-déjeuner unique qui fusionne la douceur ivoirienne et l'énergie haïtienne pour un moment gourmand et exotique </p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Détails</a></p>
+                  </div>
+                </div>
+              </li>
+          </ul>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <section class="container">
+          <h2 class="text-center mb-5 mt-5">Mets de la semaine</h2>
+          <div class="row plat-semaine">
+            <div class="col-md-12 col-lg-4 mb-3">
+              <div class="card-recette plat-1">
+                <div class="style-text-plat text-shadow-1">
+                  <h3 class="style-titre-plat">Café au gingembre</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="img/petit-logo.png" alt="logo" class="rounded-circle border">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <small>Déjeuner</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <small>12$</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-12 col-lg-4 mb-3">
+              <div class="card-recette plat-2">
+                <div class="style-text-plat text-shadow-1">
+                  <h3 class="style-titre-plat">Riz végétarien</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="img/petit-logo.png" alt="logo" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <small>Dîner</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <small>23$</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-12 col-lg-4 mb-3">
+              <div class="card-recette plat-3">
+                <div class="style-text-plat text-shadow-1">
+                  <h3 class="style-titre-plat">Spaghetti</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="img/petit-logo.png" alt="logo" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <small>Souper</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <small>25$</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section class="container">
+            <h2 class="text-center mb-5 mt-5">à propos</h2>
+             <div class="row">
+              <div class="col-lg-7 col-md-12">
+                <p class="fs-5 text-body-secondary">
+                  Bienvenue chez <em>Kreyol & Attiéké</em> , un restaurant ivoiro-haïtien où les saveurs vibrantes de la Côte d'Ivoire rencontrent les délices épicés d'Haïti. Notre mission est de vous offrir une expérience culinaire authentique, mettant en avant des ingrédients frais et locaux. Chaque plat est préparé avec passion et savoir-faire, pour vous transporter au cœur des traditions culinaires des Caraïbes et d'Afrique de l'Ouest. Que ce soit pour un déjeuner rapide ou un dîner en famille, notre ambiance chaleureuse et conviviale saura vous séduire.
+                  Dans notre menu, vous trouverez un éventail de spécialités qui raviront vos papilles, des plats emblématiques comme le Griot et l'Attiéké au poisson, en passant par des options végétariennes délicieuses. Nous croyons que la nourriture est un moyen de rassembler les gens et de célébrer la culture. Chaque bouchée est une invitation à découvrir les richesses de nos héritages respectifs.
+                </p>
+              </div>
+              <div class="col-lg-5 col-md-12">
+                  <iframe src="https://www.youtube.com/embed/xPPLbEFbCAo?si=LpAnsO7BdjC5RqZt" title="Vidéo presentation du restaurant" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+              </div>
+             </div>
+        </section>
+        <section class="container">
+          <h2 class="text-center mb-5 mt-5">Événements</h2>
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-md-4 col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/autres/autres-1.jpg" alt="image événement">
+                    <p class="text-center fs-5"> Ouverture du restaurant</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/autres/autres-2.jpg" alt="image événement">  
+                    <p class="text-center fs-5">Brassage</p>           
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="img/autres/autres-3.jpg" alt="image événement">   
+                      <p class="text-center fs-5">Notre chef en oeuvre</p>             
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/autres/autres-5.jpg" alt="image événement">
+                    <p class="text-center fs-5"> Délice</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/autres/autres-6.jpg" alt="image événement">  
+                    <p class="text-center fs-5">Festivall d'été</p>           
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                  <div class="card">
+                      <img src="img/autres/autres-7.jpg" alt="image événement">   
+                      <p class="text-center fs-5">Halloween</p>             
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <img src="img/autres/autres-8.jpg" alt="image événement">  
+                      <p class="text-center fs-5">Collation du personnel</p>      
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-md-12 col-lg-12 mb-4">
+                  <div class="card">
+                      <img src="img/autres/autres-4.jpg" alt="image événement">  
+                      <p class="text-center fs-5">Anniversaire</p>      
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-lg-12 mb-4">
+                    <div class="card">
+                        <img src="img/autres/autres-9.jpg" alt="image événement">  
+                        <p class="text-center fs-5">Snake bar</p>      
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h2 class="text-center mb-5 mt-5">Témoignages</h2>
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
+              <img src="img/testimonials/testimonials-1.jpg" class="bd-placeholder-img rounded-circle"  alt="image temoin Marie"> 
+              <h3 class="fw-normal">Marie A.</h3>
+              <p>
+                <em>
+                  Une explosion de saveurs dès la première bouchée ! J'ai adoré le mariage des épices haïtiennes et ivoiriennes. Le Griot était tendre et parfaitement assaisonné, tandis que l'Attiéké au poisson m'a rappelé les saveurs de l'Afrique de l'Ouest. Un véritable régal !
+                </em>
+              </p>
+              <p><span class="text-dark">★★★★</span>☆</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="img/testimonials/testimonials-2.jpg" class="bd-placeholder-img rounded-circle"  alt="image temoin David"> 
+              <h3 class="fw-normal">David K.</h3>
+              <p>
+                <em>
+                  L'ambiance chaleureuse et conviviale de Kreyol & Attiéké fait toute la différence. On se sent comme à la maison dès qu'on entre. Le service est impeccable, et le menu est rempli de plats qui vous emmènent en voyage. Je recommande vivement !                
+                </em>
+              </p>
+              <p><span class="text-dark">★★★★★</span></p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="img/testimonials/testimonials-3.jpg" class="bd-placeholder-img rounded-circle"  alt="image temoin Jean-Luc"> 
+              <h3 class="fw-normal">Jean-Luc B.</h3>
+              <p>
+                <em>
+                  Kreyol & Attiéké est devenu mon nouveau restaurant préféré en ville. Les plats sont à la fois réconfortants et exotiques, exactement ce qu'il me fallait. Mention spéciale au personnel toujours souriant et à l'écoute !             
+                </em>
+              </p>
+              <p><span class="text-dark">★★★</span>☆☆</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="img/testimonials/testimonials-4.jpg" class="bd-placeholder-img rounded-circle"  alt="image temoin Sophie"> 
+              <h2 class="fw-normal">Sophie M.</h2>
+              <p>
+                <em>
+                  Un endroit incontournable pour les amateurs de cuisine authentique. J'ai goûté la Sauce Arachide et c'était absolument divin ! Les portions sont généreuses, et chaque plat est préparé avec soin. Je reviendrai, c'est sûr !                </em>
+              </p>
+              <p><span class="text-dark">★★★</span>☆☆</p>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="mt-5 pt-5 bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Accueil</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Caractéristiques</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Tarifs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">À propos</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Accueil</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Caractéristiques</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Tarifs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">À propos</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Accueil</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Caractéristiques</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">Tarifs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">FAQ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black">À propos</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Abonnez-vous à notre newsletter</h5>
+              <p>Résumé mensuel de nos nouveautés et passionnantes.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter" class="visually-hidden">Adresse mail</label>
+                <input type="email" id="newsletter" class="form-control border-dark" placeholder="Adresse mail" required>
+                <button class="btn btn-secondary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column footer-infos-text-style">
+          <p>© 2024 - 05B Travail 2 Boostrap Animation CSS - Amadou KOUYAT&Eacute; & Marie Wideline Pierre (groupe 1-A)</p>
+        </div>
+      </div>
+
+      <a class="back-to-top" href="#top" title="Aller en haut de la page">
+        <i class="bi bi-arrow-up"></i>
+        <p class="visually-hidden">Aller en haut de la page</p>
+      </a>
+    </footer>
+    <!------------------------------------------------------------------------------------
+        Si on a besoin des éléments interactifs de Bootstrap, on doit utiliser au minimum
+        le 2e script suivant (bootstrap.min.js) et parfois le 1er en plus (Popper)
+        intégrés dans cet ordre.
+    ------------------------------------------------------------------------------------>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  
+</body>
+</html>
